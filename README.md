@@ -25,7 +25,7 @@ Models were trained using [Fast Point Feature Historgram (FPFH)](http://www.poin
 P3D comes with a few pretrained models. Models can be found in TF_Models folder with __".pb"__ tensorflow file extension.
 To use a model, click on _classify_ button (button icon at the top) on the left menu, controls panel on the lower right should appear. 
 In the controls panel click __Browse__ button to provide a path to __".pb"__ file and then click __Run Classification__.
-For details on why FPFH was selected, what parameters were used for training please refer to our publication [_Machine Learning Approaches to Improve Three Basic Plant Phenotyping Tasks Using Three-Dimensional Point Clouds_](http://www.plantphysiol.org/content/181/4/1425).
+For details on why FPFH was selected, what parameters were used for training please refer to our publication (See link below).
 
 <h3> <img src="./imgs/lamina_segement_border.png"> Lamina counting and segmentation</h3>
 
@@ -51,3 +51,9 @@ Prior inference P3D will compute FPHF features for every point, the default is s
 <h2> Motivation</h2>
 
 Developing methods to accurately process large volumes of 3D point clouds remains challenging for many 3D plant phenotyping applications. Here, we describe a tool that addresses four core phenotyping tasks: classification of cloud points into lamina and stem points; graph skeletonization of the stem points; segmentation of lamina points into individual lamina; and whole leaf labeling composed of individual lamina. These four tasks are critical for numerous downstream phenotyping goals, such as quantifying plant biomass, performing morphological analyses of plant shapes, and uncovering genotype to phenotype relationships. The P3D tool provides an intuitive graphical user interface, a fast 3D rendering engine for visualizing plants with millions of cloud points, and several graph-theoretic and machine learning algorithms for 3D plant architecture analyses. As 3D point clouds become a standard data type for collecting plant architecture data in the lab and in the field, the P3D tool can help accelerate next-generation plant phenotyping.
+
+<h2> Publication </h2>
+
+For many details not mentined here please refer to our _Plant Physiology_ publication:
+
+[_Machine Learning Approaches to Improve Three Basic Plant Phenotyping Tasks Using Three-Dimensional Point Clouds_](http://www.plantphysiol.org/content/181/4/1425)
