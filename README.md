@@ -11,10 +11,10 @@ P3D can visualize and process data imported as a 3D point cloud (<TT>pcd</TT> or
 
 <h3>The tool focuses on four phenotyping tasks</h3> 
 <OL>
-  <li>Lamina VS stem classification</li>
+  <li>Lamina VS. stem classification</li>
   <li>Lamina counting and segmentation</li>
-  <li><img src="./imgs/roots.png"> Stem skeletonization</li>
-  <li><img src="./imgs/leaf_labeling.png"> Whole leaf labeling</li>
+  <li>Stem skeletonization</li>
+  <li>Whole leaf labeling</li>
 </OL>
 
 <h3> <img src="./imgs/classify_border.png"> Classification </h3>
@@ -22,11 +22,15 @@ Points are classified by a trained deep learning model.
 The model uses binary classification and separates lamina and stem points.
 Models were trained using Fast Point Feature Historgram (FPFH) feature set from PCL.
 P3D comes with a few pretrained models. Models can be found in TF_Models folder with ".pb" tensorflow file extension.
-To use a model click on classify button on the left menu then controls panel on the lower right should appear. 
-In the controls panel click browse button to provide a path to ".pb" file and then click classify.
+To use a model click on classify button (button icon at the top) on the left menu, controls panel on the lower right should appear. 
+In the controls panel click *Browse* button to provide a path to *".pb"* file and then click Run *classification*.
 For details on why FPFH was selected, what parameters were used for training please refer to~\citep{Ziamtsov2019}.
 
 <h3> <img src="./imgs/lamina_segement_border.png"> Lamina counting and segmentation</h3>
+
+<h3> <img src="./imgs/roots.png"> Stem skeletonization</h3>
+
+<h3> <img src="./imgs/leaf_labeling.png"> Whole leaf labeling</h3>
 
 The algorithms developed for these tasks are novel and were recently shown to improve accuracy and/or run-time, compared to existing methods, on a large dataset of 3D plant architectures~\citep{Ziamtsov2019}. 
 
