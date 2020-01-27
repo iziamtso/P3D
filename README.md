@@ -38,7 +38,9 @@ Similarly to classification clicking on segmentaion icon on the left panel will 
 To use lamina segmentaion on user's files that already been classified else where and only contain lamina points a particular naming convetion must be followed (Described below). 
 
 <h3> <img src="./imgs/roots.png"> Stem skeletonization</h3>
-The algorithms developed for these tasks are novel and were recently shown to improve accuracy and/or run-time, compared to existing methods, on a large dataset of 3D plant architectures. 
+
+Our approach to stem skeletanization builds upon [PypeTree framework](https://www.mdpi.com/1424-8220/14/3/4271).
+We improved on speed and accuracy with partial data compared to PyPeTree. Improvements as well as detailed table of comparisons is presented in our publication (below). Stem file naming convetion need to be followed to run this methods as well. (below)
 
 <h3> <img src="./imgs/leaf_labeling.png"> Whole leaf labeling</h3>
 
