@@ -37,10 +37,14 @@ For details on why FPFH was selected, what parameters, data were used for traini
 Similarly to classification clicking on segmentaion icon on the left panel will bring lamina segmentation controls panel on the lower right. Menu provides many options to do lamina segmentation. The method is an enhanced version of conditional region growing.
 To use lamina segmentaion on user's files that already been classified else where and only contain lamina points a particular naming convetion must be followed (Described below). 
 
+<!-- Skeletonization -------------------------------------------------------------------------------------------------------->
+
 <h3> <img src="./imgs/roots.png"> Stem skeletonization</h3>
 
 Our approach to stem skeletanization builds upon [PypeTree framework](https://www.mdpi.com/1424-8220/14/3/4271).
-We improved on speed and accuracy with partial data compared to PyPeTree. Improvements as well as detailed table of comparisons is presented in our publication (below). Stem file naming convetion need to be followed to run this methods as well. (below)
+We improved on speed and accuracy. Improvements as well as detailed table of comparisons is presented in our publication (below). Stem file naming convetion need to be followed to run this methods as well. (below)
+
+<!-- Leaf labeling -------------------------------------------------------------------------------------------------------->
 
 <h3> <img src="./imgs/leaf_labeling.png"> Whole leaf labeling</h3>
 
