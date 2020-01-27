@@ -17,23 +17,43 @@ P3D can visualize and process data imported as a 3D point cloud (<TT>pcd</TT> or
   <li>Whole leaf labeling</li>
 </OL>
 
+<!-- Classification ------------------------------------------------------------------------------------------------------->
+
 <h3> <img src="./imgs/classify_border.png"> Classification </h3>
 
 Points are classified by a trained deep learning model.
 The model uses binary classification and separates lamina and stem points.
-Models were trained using [Fast Point Feature Historgram (FPFH)](http://www.pointclouds.org/) feature set from PCL.
+Prior training each 3D point was embedded into 33D FPFH (Fast Point Feature Historgram) space using [Point Cloud Library](http://www.pointclouds.org/).
+The enference begins by taking input point cloud and computes FPFH for each point, result is pumped through trained deep learning model.
 P3D comes with a few pretrained models. Models can be found in TF_Models folder with __".pb"__ tensorflow file extension.
 To use a model, click on _classify_ button (button icon at the top) on the left menu, controls panel on the lower right should appear. 
 In the controls panel click __Browse__ button to provide a path to __".pb"__ file and then click __Run Classification__.
-For details on why FPFH was selected, what parameters were used for training please refer to our publication (See link below).
+For details on why FPFH was selected, what parameters, data were used for training please refer to our publication (See link below).
+
+<!-- Segmentation -------------------------------------------------------------------------------------------------------->
 
 <h3> <img src="./imgs/lamina_segement_border.png"> Lamina counting and segmentation</h3>
 
+Similarly to classification clicking on segmentaion icon on the left panel will bring lamina segmentation controls panel on the lower right. Menu provides many options to do lamina segmentation. The method is an enhanced version of conditional region growing.
+To use lamina segmentaion on user's files that already been classified else where and only contain lamina points a particular naming convetion must be followed (Described below). 
+
 <h3> <img src="./imgs/roots.png"> Stem skeletonization</h3>
+The algorithms developed for these tasks are novel and were recently shown to improve accuracy and/or run-time, compared to existing methods, on a large dataset of 3D plant architectures. 
 
 <h3> <img src="./imgs/leaf_labeling.png"> Whole leaf labeling</h3>
 
-The algorithms developed for these tasks are novel and were recently shown to improve accuracy and/or run-time, compared to existing methods, on a large dataset of 3D plant architectures~\citep{Ziamtsov2019}. 
+<h3> Naming conventions </h3>
+For the tasks to function properly a particular naming conventions need to be followed. 
+All task except for classification expect this format.
+
+```
+plant_name_l.pcd or plant_name_l.txt  // "_l" stands for lamina points
+plant_name_s.pcd or plant_name_s.txt  // "_s" stands for stem points
+```
+
+Classification if ran on any file will produce two sets of points and name them according to the convetions automatically.
+
+
 
 <h3> How to run:</h3>
   
