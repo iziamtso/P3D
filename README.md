@@ -18,13 +18,14 @@ P3D can visualize and process data imported as a 3D point cloud (<TT>pcd</TT> or
 </OL>
 
 <h3> <img src="./imgs/classify_border.png"> Classification </h3>
+
 Points are classified by a trained deep learning model.
 The model uses binary classification and separates lamina and stem points.
-Models were trained using Fast Point Feature Historgram (FPFH) feature set from PCL.
-P3D comes with a few pretrained models. Models can be found in TF_Models folder with ".pb" tensorflow file extension.
-To use a model click on classify button (button icon at the top) on the left menu, controls panel on the lower right should appear. 
-In the controls panel click *Browse* button to provide a path to *".pb"* file and then click Run *classification*.
-For details on why FPFH was selected, what parameters were used for training please refer to~\citep{Ziamtsov2019}.
+Models were trained using [Fast Point Feature Historgram (FPFH)](http://www.pointclouds.org/) feature set from PCL.
+P3D comes with a few pretrained models. Models can be found in TF_Models folder with __".pb"__ tensorflow file extension.
+To use a model, click on _classify_ button (button icon at the top) on the left menu, controls panel on the lower right should appear. 
+In the controls panel click __Browse__ button to provide a path to __".pb"__ file and then click __Run Classification__.
+For details on why FPFH was selected, what parameters were used for training please refer to our publication [_Machine Learning Approaches to Improve Three Basic Plant Phenotyping Tasks Using Three-Dimensional Point Clouds_](http://www.plantphysiol.org/content/181/4/1425).
 
 <h3> <img src="./imgs/lamina_segement_border.png"> Lamina counting and segmentation</h3>
 
