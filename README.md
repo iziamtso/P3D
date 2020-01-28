@@ -93,4 +93,4 @@ The TF_Models folder contains deep learning models trained on our dataset using 
 
 For aditional technical details, please refer to our publication below:
 
-[_Machine Learning Approaches to Improve Three Basic Plant Phenotyping Tasks Using Three-Dimensional Point Clouds_](http://www.plantphysiol.org/content/181/4/1425)
+[_Machine Learning Approaches to Improve Three Basic Plant Phenotyping Tasks Using Three-Dimensional Point Clouds_](http://www.plantphysiol.org/content/181/4/1425) I. Ziamtsov and S. Navlakha. Plant Phys., 2019.
