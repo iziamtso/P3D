@@ -1,6 +1,10 @@
 # P3D
 Plant 3D (P3D): A plant phenotyping toolkit for 3D point clouds
 
+<h2> Motivation</h2>
+
+Developing methods to efficiently analyze 3D point cloud data of plant architectures remains challenging for many phenotyping applications. Here, we describe a tool that tackles four core phenotyping tasks: classification of cloud points into stem and lamina points; graph skeletonization of the stem points; segmentation of individual lamina; and whole leaf labeling. These four tasks are critical for numerous downstream phenotyping goals, such as quantifying plant biomass, performing morphological analyses of plant shapes, and uncovering genotype to phenotype relationships. The P3D tool provides an intuitive graphical user interface, a fast 3D rendering engine for visualizing plants with millions of cloud points, and several graph-theoretic and machine learning algorithms for 3D architecture analyses. As 3D point clouds become a standard data type for digitizing plant architectures in the lab and in the field, we hope the P3D tool can help accelerate next-generation plant phenotyping.
+
 <img src="./imgs/P3D_figure_V3.JPG">
 
 <h2> What is P3D?</h2>
@@ -85,10 +89,6 @@ After the wizard is done, there should be two folders _P3D_ and _Assets_. Open _
 
 The TF_Models folder contains deep learning models trained on our dataset using FPFH features. To use a model, supply a path to it during classification. For inference, P3D will compute FPHF features for every point using the same FPFH parameters used during training.
   
-<h2> Motivation</h2>
-
-Developing methods to efficiently analyze 3D point cloud data of plant architectures remains challenging for many phenotyping applications. Here, we describe a tool that tackles four core phenotyping tasks: classification of cloud points into stem and lamina points; graph skeletonization of the stem points; segmentation of individual lamina; and whole leaf labeling. These four tasks are critical for numerous downstream phenotyping goals, such as quantifying plant biomass, performing morphological analyses of plant shapes, and uncovering genotype to phenotype relationships. The P3D tool provides an intuitive graphical user interface, a fast 3D rendering engine for visualizing plants with millions of cloud points, and several graph-theoretic and machine learning algorithms for 3D architecture analyses. As 3D point clouds become a standard data type for digitizing plant architectures in the lab and in the field, we hope the P3D tool can help accelerate next-generation plant phenotyping.
-
 <h2> Publication </h2>
 
 For many details not mentined here please refer to our _Plant Physiology_ publication:
