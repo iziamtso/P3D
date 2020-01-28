@@ -74,10 +74,10 @@ Classification if ran on any file will produce two sets of points and name them 
 Folder __"Plant_Point_Clouds"__ contains some of raw (unclassified) scanned point clouds from our dataset in PCL's ".pcd" format. Feel free to test P3D with them.
 
 
-<h3> How to run:</h3>
+<h2> How to use</h2>
+Windows installer folder contains an msi installer file. Please donwload the file and run the executable wizard.
+![Test](install.JPG)
   
-  
-<h3> Source:</h3>
   
   
 <h2> Models</h2>
