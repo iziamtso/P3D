@@ -48,6 +48,14 @@ We improved on speed and accuracy. Improvements as well as detailed table of com
 
 <h3> <img src="./imgs/leaf_labeling.png"> Whole leaf labeling</h3>
 
+Leaf labeling task consolidates the information gathered from lamina segmentation and skeletanization to produce a point cloud where
+each point is labeled as one of the following: main stem, leaf in biological sense or cotyledon.
+Currenlty this task in only available for tomato plants. 
+To run this method both stem and lamina files need to named according to the convention (below) when imported to P3D.
+For more details refer to the publication.
+
+<!-- Conventions -------------------------------------------------------------------------------------------------------->
+
 <h3> Naming conventions </h3>
 For the tasks to function properly a particular naming conventions need to be followed. 
 All task except for classification expect this format.
@@ -69,10 +77,10 @@ Classification if ran on any file will produce two sets of points and name them 
   
 <h2> Models</h2>
 
-Models folder contains deep learning model/s trained on our dataset on extracted FPFH features. 
+TF_Models folder contains deep learning model/s trained on our dataset on extracted FPFH features. 
 To use the any of the models download a model you want and supply a path to it during classification. 
-Prior inference P3D will compute FPHF features for every point, the default is set with the same parameters as trained inference networks.
-  
+Prior inference P3D will compute FPHF features for every point.
+Parameters for FPFH computation are set to the same values as during training.
   
 <h2> Motivation</h2>
 
