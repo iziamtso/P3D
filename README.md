@@ -67,6 +67,11 @@ plant_name_s.pcd or plant_name_s.txt  // "_s" stands for stem points
 
 Classification if ran on any file will produce two sets of points and name them according to the convetions automatically.
 
+<!-- Conventions -------------------------------------------------------------------------------------------------------->
+
+<h3> Test Plant Point Clouds</h3>
+
+Folder __"Plant_Point_Clouds"__ contains some of raw (unclassified) scanned point clouds from our dataset in PCL's ".pcd" format. Feel free to test P3D with them.
 
 
 <h3> How to run:</h3>
