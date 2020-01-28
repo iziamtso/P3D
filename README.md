@@ -76,9 +76,9 @@ Folder __"Plant_Point_Clouds"__ contains some of raw (unclassified) scanned poin
 
 <h2> How to use</h2>
 Windows installer folder contains an msi installer file. Please donwload the file and run the executable wizard.
-![Test](install.JPG)
-  
-  
+<img src="./imgs/install.JPG">. After wizard is done, there should be two folders P3D and Assets. Open P3D folder and run an executable file located there. If you dont have access you a windows computer consider using a virual machine with a tool such as [virtual box](https://www.virtualbox.org/).
+
+<!-- Models -------------------------------------------------------------------------------------------------------->
   
 <h2> Models</h2>
 
