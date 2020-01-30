@@ -87,6 +87,8 @@ After the wizard is done, there should be two folders _P3D_ and _Assets_. Open _
   
 <h2> Models</h2>
 
+Because plants show remarkable plasticity in their form, P3D provides a comprehensive classification model pre-trained on diverse architectures grown in different environments (ambient, high-light, high-heat, drought, shade) and at different developmental time-points (from day 5 to day 20). In addition, P3D allows users to provide a path to their own pre-trained network. 
+
 The TF_Models folder contains deep learning models trained on our dataset using FPFH features. To use a model, supply a path to it during classification. For inference, P3D will compute FPHF features for every point using the same FPFH parameters used during training.
   
 <h2> Publication </h2>
